@@ -50,7 +50,7 @@ public class JobController {
         newJob.setCoreCompetency(jobData.getCoreCompetencies().findById(jobForm.getCoreCompetencyId()));
         jobData.add(newJob);
 
-        return "job?id=" + newJob.getId();
+        return "redirect:/job?id=" + newJob.getId();
 
     }
 }
